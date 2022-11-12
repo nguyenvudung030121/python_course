@@ -32,7 +32,7 @@ Created on Wed Oct 12 15:18:26 2022
 # ----------------------------------------------
 # ages = [1, 34, 5, 7, 3, 57, 356]
 # old_ages = [x for x in ages if x > 10 and x < 100 and x is not None]
-# print(old_ages)'
+# print(old_ages)
 
 #-----------------------------------------
 #BAI TAP 1

@@ -18,6 +18,7 @@ Created on Wed Oct 26 15:18:58 2022
 # sequence = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r']
 # # using filter function
 # filtered = list(filter(fun, sequence))
+# print(filtered)
 
 
 # #Hàm Map nhanh hơn for
@@ -52,10 +53,31 @@ Created on Wed Oct 26 15:18:58 2022
 # list_moi = list(map(lambda a: a*2 , list_goc))
 # print(list_moi)
 
-list_char = ['a','b','c','d','e']
+# ------------IN HOA TAT CA KY TU TRONG CHUOI----------------
+# list_char = ['a','b','c','d','e']
 
-list_charUpper = list(map(lambda a: a.upper(),list_char))
-print(list_charUpper)
+# list_charUpper = list(map(lambda a: a.upper(),list_char))
+# print(list_charUpper)
+
+#-----------Tìm và Đếm số Nguyên tố trong khoảng-------------
+
+def check_prime(x):
+    if x <= 1 :
+        return False
+    elif x==2:
+        return True
+    elif (x % 2 == 0):
+        return False
+    else:
+        for i in range(3,x,2):
+            if x % i == 0:
+                return False
+    return True
+
+
+print( "Danh sach so NT: ",end = " ")
+[print(number,end=" ") for number in range(1,101) if check_prime(number)]
+
 
 
 
