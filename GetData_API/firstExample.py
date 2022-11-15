@@ -16,4 +16,5 @@ currency = '&tsym=USD'
 url = 'https://min-api.cryptocompare.com/data/v2/histo' + frequency + '?' + header + currency + API_KEY + limit
 print(url)
 response = requests.get(url).json()
-print(response)
+print(response.keys())
+# print(type(response['Data']))
